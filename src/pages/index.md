@@ -1,16 +1,17 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Bountiful Enterprises
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Structural Steel Detailing, Fabrication, and Erecting since 1999.
+subheading: Structural Steel Detailing, Fabrication, and Erecting since 1999.
 mainpitch:
-  title: Why Kaldi
+  title: What We do
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Here at Bountiful Enterprises we are a group of highly motivated people committed to increasing your confidence in us.
+    You will recieve the best possible service and products on schedule and at a competitive price. We have a high level of knowledge about structural steel and its users. 
+    We will prove to you how much we care about your businesss by preforming in ways that exceed your exppectations.
+    We will work to solve our customer's indivisual problems.
+    Customer Satisfaction is our top priority.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
