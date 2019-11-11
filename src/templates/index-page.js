@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-import { Card, Col, Row, Container } from 'react-bootstrap'
+import { Card, Col, Row, Container, Button } from 'react-bootstrap'
 
 export const IndexPageTemplate = ({
   image,
@@ -78,6 +78,12 @@ export const IndexPageTemplate = ({
                   {/* {heading} */}
                 </h3>
                 <p>{description}</p>
+                <Link to="/contact">
+                  <Button variant="primary">
+                    Contact Us Now
+                  </Button>
+                </Link>
+
               </div>
             </div>
             {/* <Features gridItems={intro.blurbs} /> */}
@@ -104,18 +110,18 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
+        {/* this section will be replaced with the calloutCard component */}
         <Container>
           <Row>
             <Col >
               <Card className="mx-auto" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="/img/coffee.png" />
+                <Card.Img variant="top" src="/img/detailing2.png" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Detailing</Card.Title>
                   <Card.Text>
-                    {heading}
+                    DEtailing informatiin that helps the user better undersand what its all about
                   </Card.Text>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="/services">Learn More</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -123,12 +129,11 @@ export const IndexPageTemplate = ({
               <Card className="mx-auto" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="/img/coffee.png" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Fabricating</Card.Title>
                   <Card.Text>
                     {heading}
                   </Card.Text>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="/services">Learn More</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -136,27 +141,25 @@ export const IndexPageTemplate = ({
               <Card className="mx-auto" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="/img/coffee.png" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Erecting</Card.Title>
                   <Card.Text>
                     {heading}
                   </Card.Text>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="/services">Learn More</Card.Link>
                 </Card.Body>
               </Card>
             </Col>           
           </Row>
           <Row className="pt-4">
-            <Col >
+            <Col>
               <Card className="mx-auto" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="/img/coffee.png" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Shipping</Card.Title>
                   <Card.Text>
                     {heading}
                   </Card.Text>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="/services">Learn More</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -164,12 +167,11 @@ export const IndexPageTemplate = ({
               <Card className="mx-auto" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="/img/coffee.png" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Quality Control</Card.Title>
                   <Card.Text>
                     {heading}
                   </Card.Text>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="/services">Learn More</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -177,12 +179,11 @@ export const IndexPageTemplate = ({
               <Card className="mx-auto" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="/img/coffee.png" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Projects</Card.Title>
                   <Card.Text>
                     {heading}
                   </Card.Text>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="/services">Learn More</Card.Link>
                 </Card.Body>
               </Card>
             </Col>           
