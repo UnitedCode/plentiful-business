@@ -146,7 +146,7 @@ export const IndexPageTemplate = ({
               </Card>
             </Col>           
           </Row>
-          <Row>
+          <Row className="pt-4">
             <Col >
               <Card className="mx-auto" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="/img/coffee.png" />
