@@ -65,209 +65,207 @@ export const IndexPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div>
-          <div className="content">
-            <div className="content">
-              <div className="tile">
-                <h1 className="title text-primary">{mainpitch.title}</h1>
+        <div className="section">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="content">
+                <div className="content">
+                  <div className="tile">
+                    <h1 className="title">{mainpitch.title}</h1>
+                  </div>
+                  <div className="tile">
+                    <h5 className="subtitle text-white">{mainpitch.description}</h5>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {/* {heading} */}
+                    </h3>
+                    <p>{description}</p>
+                    <Link to="/contact">
+                      <Button variant="primary">
+                        Contact Us Now
+                      </Button>
+                    </Link>
+                    <hr />
+                  </div>
+                </div>
+                {/* <Features gridItems={intro.blurbs} /> */}
+                <div className="columns">
+                  <div className="column is-12 has-text-centered hero">
+                    <h3>
+                      Our Services
+                    </h3>
+                    {/* <Link className="btn" to="/products">
+                      See all products
+                    </Link> */}
+                  </div>
+                </div>
+                <div className="column is-12">
+                  {/* <h3 className="has-text-weight-semibold is-size-2">
+                    Latest stories
+                  </h3> */}
+                  {/* <BlogRoll /> */}
+                  {/* <div className="column is-12 has-text-centered"> */}
+                    {/* <Link className="btn" to="/blog">
+                      Read more
+                    </Link>
+                  </div> */}
+                </div>
               </div>
-              <div className="tile">
-                <h5 className="subtitle text-white">{mainpitch.description}</h5>
+{/* Cards Row 1 */}
+              <div class="columns">
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="/img/detailing2.png" alt="Placeholder image"/>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">Detailing</p>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br/>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="/img/fabricating.jpg" alt="Placeholder image"/>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">Fabricating</p>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br/>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="/img/erecting.jpg" alt="Placeholder image"/>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">Erecting</p>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br/>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="columns">
-              <div className="column is-12">
-                <h3 className="has-text-weight-semibold is-size-2">
-                  {/* {heading} */}
-                </h3>
-                <p>{description}</p>
-                <Link to="/contact">
-                  <Button variant="primary">
-                    Contact Us Now
-                  </Button>
-                </Link>
-                <hr />
+{/* Card row 2 */}
+              <div class="columns">
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="/img/shipping.jpg" alt="Placeholder image"/>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">Shipping</p>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br/>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="/img/python.jpg" alt="Placeholder image"/>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">Quality Control</p>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br/>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="/img/projects.jpg" alt="Placeholder image"/>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">Projects</p>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br/>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            {/* <Features gridItems={intro.blurbs} /> */}
-            <div className="columns">
-              <div className="column is-12 has-text-centered">
-                <h3>
-                  Our Services
-                </h3>
-                {/* <Link className="btn" to="/products">
-                  See all products
-                </Link> */}
-              </div>
-            </div>
-            <div className="column is-12">
-              {/* <h3 className="has-text-weight-semibold is-size-2">
-                Latest stories
-              </h3> */}
-              {/* <BlogRoll /> */}
-              {/* <div className="column is-12 has-text-centered"> */}
-                {/* <Link className="btn" to="/blog">
-                  Read more
-                </Link>
-              </div> */}
-            </div>
+            </div> 
           </div>
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">Detailing</p>
-                      <p class="subtitle is-6">@johnsmith</p>
-                    </div>
-                  </div>
-
-                  <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br/>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
-                    </div>
-                  </div>
-
-                  <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br/>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
-                    </div>
-                  </div>
-
-                  <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br/>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-            {/* this section will be replaced with the calloutCard component */}      
-            <Container>
-              <Row>
-                <Col  className="pt-5">
-                  <Card className="mx-auto" style={{ width: '20em' }}>
-                    <Card.Img variant="top" src="/img/detailing2.png" />
-                    <Card.Body>
-                      <Card.Title>Detailing</Card.Title>
-                      <Card.Text>
-                        DEtailing informatiin that helps the user better undersand what its all about
-                      </Card.Text>
-                      <Card.Link href="/services">Learn More</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col  className="pt-5">
-                  <Card className="mx-auto" style={{ width: '20rem' }}>
-                    <Card.Img variant="top" src="/img/coffee.png" />
-                    <Card.Body>
-                      <Card.Title>Fabricating</Card.Title>
-                      <Card.Text>
-                        {heading}
-                      </Card.Text>
-                      <Card.Link href="/services">Learn More</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col  className="pt-5">
-                  <Card className="mx-auto" style={{ width: '20em' }}>
-                    <Card.Img variant="top" src="/img/coffee.png" />
-                    <Card.Body>
-                      <Card.Title>Erecting</Card.Title>
-                      <Card.Text>
-                        {heading}
-                      </Card.Text>
-                      <Card.Link href="/services">Learn More</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>           
-              </Row>
-              <Row>
-                <Col className="pt-5">
-                  <Card className="mx-auto" style={{ width: '20rem' }}>
-                    <Card.Img variant="top" src="/img/coffee.png" />
-                    <Card.Body>
-                      <Card.Title>Shipping</Card.Title>
-                      <Card.Text>
-                        {heading}
-                      </Card.Text>
-                      <Card.Link href="/services">Learn More</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col  className="pt-5">
-                  <Card className="mx-auto" style={{ width: '20rem' }}>
-                    <Card.Img variant="top" src="/img/coffee.png" />
-                    <Card.Body>
-                      <Card.Title>Quality Control</Card.Title>
-                      <Card.Text>
-                        {heading}
-                      </Card.Text>
-                      <Card.Link href="/services">Learn More</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col  className="pt-5">
-                  <Card className="mx-auto" style={{ width: '20rem' }}>
-                    <Card.Img variant="top" src="/img/coffee.png" />
-                    <Card.Body>
-                      <Card.Title>Projects</Card.Title>
-                      <Card.Text>
-                        {heading}
-                      </Card.Text>
-                      <Card.Link href="/services">Learn More</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>           
-              </Row>
-            </Container>
         </div> 
       </div>
     </section>
