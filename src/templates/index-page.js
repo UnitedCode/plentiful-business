@@ -16,15 +16,18 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
+  <div style={{
+    backgroundColor: 'rgba(25, 30, 55, 1)'}}>
     <div
       className="full-width-image margin-top-0"
       style={{
+        backgroundColor: '#124',
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        })`,       
         backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        backgroundAttachment: `fixed`
+
       }}
     >
       <div
@@ -62,14 +65,14 @@ export const IndexPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="column is-10 is-offset-1">
+        <div>
           <div className="content">
             <div className="content">
               <div className="tile">
-                <h1 className="title">{mainpitch.title}</h1>
+                <h1 className="title text-primary">{mainpitch.title}</h1>
               </div>
               <div className="tile">
-                <h3 className="subtitle">{mainpitch.description}</h3>
+                <h5 className="subtitle text-white">{mainpitch.description}</h5>
               </div>
             </div>
             <div className="columns">
@@ -83,7 +86,7 @@ export const IndexPageTemplate = ({
                     Contact Us Now
                   </Button>
                 </Link>
-
+                <hr />
               </div>
             </div>
             {/* <Features gridItems={intro.blurbs} /> */}
@@ -109,86 +112,86 @@ export const IndexPageTemplate = ({
               </div> */}
             </div>
           </div>
-        </div>
-        {/* this section will be replaced with the calloutCard component */}
-        <Container>
-          <Row>
-            <Col >
-              <Card className="mx-auto" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="/img/detailing2.png" />
-                <Card.Body>
-                  <Card.Title>Detailing</Card.Title>
-                  <Card.Text>
-                    DEtailing informatiin that helps the user better undersand what its all about
-                  </Card.Text>
-                  <Card.Link href="/services">Learn More</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col >
-              <Card className="mx-auto" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="/img/coffee.png" />
-                <Card.Body>
-                  <Card.Title>Fabricating</Card.Title>
-                  <Card.Text>
-                    {heading}
-                  </Card.Text>
-                  <Card.Link href="/services">Learn More</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col >
-              <Card className="mx-auto" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="/img/coffee.png" />
-                <Card.Body>
-                  <Card.Title>Erecting</Card.Title>
-                  <Card.Text>
-                    {heading}
-                  </Card.Text>
-                  <Card.Link href="/services">Learn More</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>           
-          </Row>
-          <Row className="pt-4">
-            <Col>
-              <Card className="mx-auto" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="/img/coffee.png" />
-                <Card.Body>
-                  <Card.Title>Shipping</Card.Title>
-                  <Card.Text>
-                    {heading}
-                  </Card.Text>
-                  <Card.Link href="/services">Learn More</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col >
-              <Card className="mx-auto" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="/img/coffee.png" />
-                <Card.Body>
-                  <Card.Title>Quality Control</Card.Title>
-                  <Card.Text>
-                    {heading}
-                  </Card.Text>
-                  <Card.Link href="/services">Learn More</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col >
-              <Card className="mx-auto" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="/img/coffee.png" />
-                <Card.Body>
-                  <Card.Title>Projects</Card.Title>
-                  <Card.Text>
-                    {heading}
-                  </Card.Text>
-                  <Card.Link href="/services">Learn More</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>           
-          </Row>
-        </Container>
+            {/* this section will be replaced with the calloutCard component */}      
+            <Container>
+              <Row>
+                <Col  className="pt-5">
+                  <Card className="mx-auto" style={{ width: '20em' }}>
+                    <Card.Img variant="top" src="/img/detailing2.png" />
+                    <Card.Body>
+                      <Card.Title>Detailing</Card.Title>
+                      <Card.Text>
+                        DEtailing informatiin that helps the user better undersand what its all about
+                      </Card.Text>
+                      <Card.Link href="/services">Learn More</Card.Link>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col  className="pt-5">
+                  <Card className="mx-auto" style={{ width: '20rem' }}>
+                    <Card.Img variant="top" src="/img/coffee.png" />
+                    <Card.Body>
+                      <Card.Title>Fabricating</Card.Title>
+                      <Card.Text>
+                        {heading}
+                      </Card.Text>
+                      <Card.Link href="/services">Learn More</Card.Link>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col  className="pt-5">
+                  <Card className="mx-auto" style={{ width: '20em' }}>
+                    <Card.Img variant="top" src="/img/coffee.png" />
+                    <Card.Body>
+                      <Card.Title>Erecting</Card.Title>
+                      <Card.Text>
+                        {heading}
+                      </Card.Text>
+                      <Card.Link href="/services">Learn More</Card.Link>
+                    </Card.Body>
+                  </Card>
+                </Col>           
+              </Row>
+              <Row>
+                <Col className="pt-5">
+                  <Card className="mx-auto" style={{ width: '20rem' }}>
+                    <Card.Img variant="top" src="/img/coffee.png" />
+                    <Card.Body>
+                      <Card.Title>Shipping</Card.Title>
+                      <Card.Text>
+                        {heading}
+                      </Card.Text>
+                      <Card.Link href="/services">Learn More</Card.Link>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col  className="pt-5">
+                  <Card className="mx-auto" style={{ width: '20rem' }}>
+                    <Card.Img variant="top" src="/img/coffee.png" />
+                    <Card.Body>
+                      <Card.Title>Quality Control</Card.Title>
+                      <Card.Text>
+                        {heading}
+                      </Card.Text>
+                      <Card.Link href="/services">Learn More</Card.Link>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col  className="pt-5">
+                  <Card className="mx-auto" style={{ width: '20rem' }}>
+                    <Card.Img variant="top" src="/img/coffee.png" />
+                    <Card.Body>
+                      <Card.Title>Projects</Card.Title>
+                      <Card.Text>
+                        {heading}
+                      </Card.Text>
+                      <Card.Link href="/services">Learn More</Card.Link>
+                    </Card.Body>
+                  </Card>
+                </Col>           
+              </Row>
+            </Container>
+        </div> 
       </div>
     </section>
   </div>
