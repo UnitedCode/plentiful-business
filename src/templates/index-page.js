@@ -1,10 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+/** TODO: Separate the What We Do from Our services (DONE)
+ *  TODO: Style the What We Do section
+ *  TODO: create hero section for Our Services (inProgress)
+ *  TODO: Style Callout ccards
+ */
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Layout from "../components/Layout";
+import Features from "../components/Features";
+import BlogRoll from "../components/BlogRoll";
+import { Card, Col, Row, Container, Button } from "react-bootstrap";
 
 export const IndexPageTemplate = ({
   image,
@@ -13,38 +19,40 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro,
+  intro
 }) => (
-  <div>
+  <div
+    style={{
+      backgroundColor: "rgba(25, 30, 55, 1)"
+    }}
+  >
     <div
       className="full-width-image margin-top-0"
       style={{
+        backgroundColor: "#124",
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        backgroundAttachment: `fixed`
       }}
     >
       <div
         style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
+          display: "flex",
+          height: "150px",
+          lineHeight: "1",
+          justifyContent: "space-around",
+          alignItems: "left",
+          flexDirection: "column"
         }}
       >
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
+            color: "#E9EAEC",
+            lineHeight: "1",
+            padding: "0.25em"
           }}
         >
           {title}
@@ -52,57 +60,239 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
+            backgroundColor: "rgba(0, 0, 0, 0.53)",
+            color: "#90ADC6",
+            lineHeight: "1",
+            padding: "0.25em"
           }}
         >
           {subheading}
         </h3>
       </div>
     </div>
-    <section className="section section--gradient">
+    <section className="section section--gradient is-fullheight">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
-                  <div className="tile">
+                  <div className="tile content">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <h5 className="subtitle text-white is-small">
+                      {mainpitch.description}
+                    </h5>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
+                      {/* {heading} */}
                     </h3>
                     <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+                    <Link to="/contact">
+                      <button className="button is-primary">Contact Us Now</button>
                     </Link>
                   </div>
                 </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+{/* <section className="hero is-info">
+  <div className="hero-body">
+    <div className="container">
+      <h1 className="title">
+        Our Services
+      </h1>
+      <h2 className="subtitle">
+        Large subtitle
+      </h2>
+    </div>
+  </div>
+</section> */}
+
+
+
+  <section className="section section--gradient hero is-info">
+      <div className="container">
+        <div className="section">
+          <div className="columns">
+            
+            <div className="column is-10 is-offset-1">
+              {/* <div className="content"> */}
+                {/* <Features gridItems={intro.blurbs} /> */}
+                {/* <div className="columns">
+
+                </div> */}
+                  {/* <div className="column is-12">
+                  {/* <BlogRoll /> *
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                  </div>
+                </div> 
+              </div>
+              
+              {/* Cards Row 1 */}
+              <div className="container">
+                <div className="tile content">
+                  <h1 className="title">
+                    Our Services
+                  </h1>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column">
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="image is-4by3">
+                        <img
+                          src="/img/detailing2.png"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <p className="title is-4">Detailing</p>
+                        </div>
+                      </div>
+
+                      <div className="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="column">
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="image is-4by3">
+                        <img
+                          src="/img/fabricating.jpg"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <p className="title is-4">Fabricating</p>
+                        </div>
+                      </div>
+
+                      <div className="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="column">
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="image is-4by3">
+                        <img src="/img/erecting.jpg" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <p className="title is-4">Erecting</p>
+                        </div>
+                      </div>
+
+                      <div className="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card row 2 */}
+              <div className="columns">
+                <div className="column">
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="image is-4by3">
+                        <img src="/img/shipping.jpg" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <p className="title is-4">Shipping</p>
+                        </div>
+                      </div>
+
+                      <div className="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="column">
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="image is-4by3">
+                        <img src="/img/python.jpg" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <p className="title is-4">Quality Control</p>
+                        </div>
+                      </div>
+
+                      <div className="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="column">
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="image is-4by3">
+                        <img src="/img/projects.jpg" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <p className="title is-4">Projects</p>
+                        </div>
+                      </div>
+
+                      <div className="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -112,7 +302,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+);
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -122,12 +312,12 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-}
+    blurbs: PropTypes.array
+  })
+};
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -141,18 +331,18 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+      frontmatter: PropTypes.object
+    })
+  })
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -190,4 +380,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
