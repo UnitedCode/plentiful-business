@@ -25,21 +25,118 @@ export const ProductPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
+        backgroundAttachment: `fixed`
       }}
     >
       <h2
         className="has-text-weight-bold is-size-1"
         style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
+          backgroundColor: "rgba(0, 0, 0, 0.53)",
+          lineHeight: "1",
+          padding: "0.25em"
         }}
       >
         {title}
       </h2>
     </div>
-    <section className="section section--gradient">
+    {/*---------------------------------Detailing---------------------------------------*/}
+    <div
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(/img/detailing2.png)`,
+        backgroundAttachment: `fixed`
+      }}
+    >
+      <h2
+        className="has-text-weight-bold is-size-1"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.53)",
+          lineHeight: "1",
+          padding: "0.25em"
+        }}
+      >
+        Detailing
+      </h2>
+    </div>
+{/* -------------------------------------Fabricating-------------------------------------- */}
+    <div
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(/img/fabricating.jpg)`,
+        backgroundAttachment: `fixed`
+      }}
+    >
+      <h2
+        className="has-text-weight-bold is-size-1"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.53)",
+          lineHeight: "1",
+          padding: "0.25em"
+        }}
+      >
+        Fabricating
+      </h2>
+    </div>
+{/* --------------------------------------Erecting---------------------------------------------------- */}
+    <div
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(/img/erecting.jpg)`,
+        backgroundAttachment: `fixed`
+      }}
+    >
+      <h2
+        className="has-text-weight-bold is-size-1"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.53)",
+          lineHeight: "1",
+          padding: "0.25em"
+        }}
+      >
+        Erecting
+      </h2>
+    </div>
+{/* ------------------------------------Shipping-------------------------------------------------------- */}
+    <div
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(/img/shipping.jpg)`,
+        backgroundAttachment: `fixed`
+      }}
+    >
+      <h2
+        className="has-text-weight-bold is-size-1"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.53)",
+          lineHeight: "1",
+          padding: "0.25em"
+        }}
+      >
+        Shipping
+      </h2>
+    </div>
+{/* ------------------------------------quality Control------------------------------------------------- */}
+<div
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(/img/python.jpg)`,
+        backgroundAttachment: `fixed`
+      }}
+    >
+      <h2
+        className="has-text-weight-bold is-size-1"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.53)",
+          lineHeight: "1",
+          padding: "0.25em"
+        }}
+      >
+        Quality Control
+      </h2>
+    </div>
+
+    {/* IM GOING TO LEAVE THIS HERE FOR REFERENCES WHEN WE DO THE CMS */}
+    {/* <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -98,9 +195,9 @@ export const ProductPageTemplate = ({
               <Pricing data={pricing.plans} />
             </div>
           </div>
-        </div>
+        </div> 
       </div>
-    </section>
+    </section> */}
   </div>
 )
 
