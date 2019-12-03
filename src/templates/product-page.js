@@ -58,6 +58,14 @@ export const ProductPageTemplate = ({
         Detailing
       </h2>
     </div>
+    <div className="columns is-info is-primary">
+      <div className="column is info">
+        First column
+      </div>
+      <div className="column is-four-fifths">
+        Second column
+      </div>
+    </div>
 {/* -------------------------------------Fabricating-------------------------------------- */}
     <div
       className="full-width-image-container margin-top-0"
