@@ -18,7 +18,7 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <div className="content">
+  <div>
     <div
       className="full-width-image-container margin-top-0"
       style={{
@@ -58,14 +58,24 @@ export const ProductPageTemplate = ({
         Detailing
       </h2>
     </div>
-    <div className="columns is-info is-primary">
-      <div className="column is info">
+    <div className="columns is-primary">
+      <div className="column is-primary">
         First column
       </div>
       <div className="column is-four-fifths">
         Second column
       </div>
     </div>
+    
+
+    <div class="columns is-vcentered">
+  <div class="column is-8">
+    <p class="bd-notification is-primary">First column</p>
+  </div>
+  <div class="column">
+    <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
+  </div>
+</div>
 {/* -------------------------------------Fabricating-------------------------------------- */}
     <div
       className="full-width-image-container margin-top-0"
